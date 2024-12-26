@@ -12,11 +12,12 @@ import seaborn as sns
 
 sample_file = "/Users/kde/Documents/Music Genre Classification/audio_files/PinkPanther30.wav"
 
-# # Displaying the sample file in form of waveshow (by librosa)
+# Displaying the sample file in form of waveshow (by librosa)
 x, sr = librosa.load(sample_file, sr=44100)
 # plt.figure(figsize=(14, 5))
 # librosa.display.waveshow(x, sr=sr)
 # plt.show()
+
 def plot_melspectrogram(y,sr):
     # Compute the spectrogram
     spectrogram = librosa.feature.melspectrogram(y=y, sr=sr)
